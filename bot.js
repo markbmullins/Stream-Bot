@@ -38,6 +38,6 @@ client.on("message", message => {
     // Command runner
     const commandFile = client.commands.get(cmd);
     if (commandFile) {
-        commandFile.run({ client, message, args });
+        commandFile.run({ client, message, args, Discord });
     }
 });
